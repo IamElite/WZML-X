@@ -1,1 +1,1 @@
-web: python3 update.py && python3 -m bot
+worke: python3 update.py && python3 -m bot
