@@ -1,0 +1,45 @@
+{
+  "name": "WZML-X",
+  "description": "Telegram Mirror/Leech Bot for Google Drive, Rclone, and more.",
+  "repository": "https://github.com/IamElite/WZML-X",
+  "keywords": ["telegram", "mirror", "leech", "heroku", "gdrive"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token from @BotFather",
+      "required": true,
+      "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "MongoDB connection string",
+      "required": true,
+      "value": ""
+    },
+    "UPSTREAM_REPO": {
+      "description": "GitHub repo URL to pull code from",
+      "required": true,
+      "value": "https://github.com/IamElite/WZML-X"
+    },
+    "UPSTREAM_BRANCH": {
+      "description": "Branch name to deploy",
+      "required": true,
+      "value": "master"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-rclone"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": "1",
+      "size": "Standard-2X"
+    }
+  }
+}
