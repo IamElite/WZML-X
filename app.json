@@ -25,21 +25,11 @@
       "value": "master"
     }
   },
-  "buildpacks": [
-    {
-      "url": "heroku-community/apt"
-    },
-    {
-      "url": "heroku/python"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
-    }
-  ],
   "formation": {
     "worker": {
       "quantity": "1",
       "size": "Standard-2X"
     }
   },
+  "stack": "container"
 }
