@@ -27,9 +27,6 @@
   },
   "buildpacks": [
     {
-      "url": "heroku-community/apt"
-    },
-    {
       "url": "heroku/python"
     },
     {
