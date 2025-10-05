@@ -51,7 +51,7 @@
     }
   },
   "formation": {
-    "worker": {
+    "web": {
       "quantity": "1",
       "size": "Standard-2X"
     }
