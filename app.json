@@ -23,6 +23,31 @@
       "description": "Branch name to deploy",
       "required": true,
       "value": "master"
+    },
+    "AUTHORIZED_CHATS": {
+      "description": "Telegram chat IDs allowed to use the bot (comma separated if multiple)",
+      "required": true,
+      "value": "-4930745718"
+    },
+    "SUDO_USERS": {
+      "description": "Telegram user IDs with sudo access (comma separated if multiple)",
+      "required": true,
+      "value": "1679112664"
+    },
+    "OWNER_ID": {
+      "description": "Telegram user ID of the bot owner",
+      "required": true,
+      "value": "7074383232"
+    },
+    "TELEGRAM_API": {
+      "description": "Telegram API ID from https://my.telegram.org",
+      "required": true,
+      "value": "28053244"
+    },
+    "TELEGRAM_HASH": {
+      "description": "Telegram API Hash from https://my.telegram.org",
+      "required": true,
+      "value": "a7d745be7c8ba465750bfad1e7abc075"
     }
   },
   "formation": {
